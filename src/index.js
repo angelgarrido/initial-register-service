@@ -8,7 +8,8 @@ import * as serviceWorker from './serviceWorker';
 import './index.css';
 import PageHome from './pages/page-home';
 import PageAdmin from './pages/page-admin';
-import PageExample from './pages/page-example';
+import PageLogin from './pages/page-login';
+import PageLogout from './pages/page-logout';
 
 /* Amplify imports */
 import Amplify from "aws-amplify";
@@ -20,7 +21,8 @@ ReactDOM.render(
     <Router>
       <Route exact= {true} path="/" component={ PageHome } />
       <Route path="/admin" component={ PageAdmin } />
-      <Route path="/example" component = { PageExample } />
+      <Route path="/login" component = { PageLogin } />
+      <Route path="/logout" component = { PageLogout } />
     </Router>
   </React.StrictMode>,
   document.getElementById('root')

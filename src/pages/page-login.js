@@ -1,13 +1,13 @@
 import React from 'react';
 import { Header } from '../components/header';
 
-function PageExample() {
+function PageLogin() {
     return (
         <div className="page">
             <Header />
-            <h2>Example</h2>
+            <h2>Login</h2>
         </div>
     );
   }
-  export default PageExample;
+  export default PageLogin;
   
