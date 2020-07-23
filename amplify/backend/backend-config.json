@@ -16,5 +16,12 @@
 				}
 			}
 		}
+	},
+	"auth": {
+		"testregisterusersbb34ded7": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": []
+		}
 	}
 }
