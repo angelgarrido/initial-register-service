@@ -10,6 +10,7 @@ import PageHome from './pages/page-home';
 import PageAdmin from './pages/page-admin';
 import PageLogin from './pages/page-login';
 import PageLogout from './pages/page-logout';
+import PageRestaurants from './pages/page-restaurants';
 
 /* Amplify imports */
 import Amplify from "aws-amplify";
@@ -20,6 +21,7 @@ ReactDOM.render(
   <React.StrictMode>
     <Router>
       <Route exact= {true} path="/" component={ PageHome } />
+      <Route path="/restaurantes" component={ PageRestaurants } />
       <Route path="/admin" component={ PageAdmin } />
       <Route path="/login" component = { PageLogin } />
       <Route path="/logout" component = { PageLogout } />

@@ -1,13 +1,13 @@
 import React from 'react';
 import { Header } from '../components/header';
-import { ContentHome } from '../components/contentHome';
+import { ContentRestaurants } from '../components/contentRestaurants';
 
-function PageHome() {
+function PageRestaurants() {
     return (
         <div className="page">
             <Header />
-            <ContentHome />
+            <ContentRestaurants />
         </div>
     );
   }
-  export default PageHome;
+  export default PageRestaurants;
