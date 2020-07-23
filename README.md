@@ -15,12 +15,35 @@ Se trata de un servicio relizada con el framework de Amazon AWS Amplify.
 - Cuenta en AWS (Amazon Web services)
 - [Amplify CLI](https://github.com/aws-amplify/amplify-cli)
 
-## Lanzar el programa
+## Lanzar el programa (en remoto)
+1. git clone
+2. amplify configure
+3. amplify push
+4. amplify publish
+5. amplify status (check status)
+
+# Lanzar en local
+2. npm install
+3. npm start
 
 ## Informacion adicional
-### Step by step 
+### Initialize
 1. Configure amplify
 ```bash
 amplify configure
 ```
-2. 
+2. Create React App Wrapper
+```bash
+npx create-react-app . 
+```
+3. Initialize Amplify in the project 
+```bash
+amplify init 
+```
+
+
+### Basic libraries
+1. Install basic libraries for our project
+```bash
+npm install aws-amplify @aws-amplify/ui-react react-dom react-router-dom
+```

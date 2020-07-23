@@ -11,7 +11,6 @@ export class ContentRestaurants extends Component {
     try {
       const apiData = await API.graphql(graphqlOperation(listRestaurants))
       const restaurants = apiData.data.listRestaurants.items
-      console.log('restaurantes: ', restaurants)
       this.setState({ restaurants })
     } catch (err) {
       console.log('error: ', err)

@@ -23,6 +23,8 @@ const authScreenLabels = {
         'Create a new account': 'Crea una cuenta nueva',
         'Sign In': 'Acceder',
         'Sign in': 'Acceder',
+        'Sign Out': 'Cerrar Sesión',
+        'Sign out': 'Cerrar Sesión',
         'Password did not conform with policy: Password not long enough':'Error de password: La contraseña no es suficientemente larga',
         'An account with the given email already exists.':'Ya existe una cuenta con ese correo electrónico',
         'Confirm Sign up':'Confirmar registro',
