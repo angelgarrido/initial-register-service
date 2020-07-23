@@ -1,8 +1,12 @@
 import React from 'react';
+import { Header } from '../components/header';
 
 function PageExample() {
     return (
-        <h2>Example</h2>
+        <div className="page">
+            <Header />
+            <h2>Example</h2>
+        </div>
     );
   }
   export default PageExample;
