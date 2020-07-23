@@ -1,8 +1,17 @@
+/* Basic React imports */
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Route, Link, BrowserRouter as Router } from 'react-router-dom'
+import * as serviceWorker from './serviceWorker';
+
+/* Pages imports */
 import './index.css';
 import App from './App';
-import * as serviceWorker from './serviceWorker';
+import PageHome from './pages/page-home';
+import PageAdmin from './pages/page-admin';
+import PageExample from './pages/page-example';
+
+/* Amplify imports */
 import Amplify from "aws-amplify";
 import awsExports from "./aws-exports";
 Amplify.configure(awsExports);
@@ -10,6 +19,11 @@ Amplify.configure(awsExports);
 ReactDOM.render(
   <React.StrictMode>
     <App />
+    <Router>
+      <Route exact= {true} path="/" component={ PageHome } />
+      <Route path="/admin" component={ PageAdmin } />
+      <Route path="/example" component = { PageExample } />
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );
